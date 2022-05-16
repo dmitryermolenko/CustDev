@@ -13,6 +13,16 @@ body {
   background-position: top right;
 }
 
+.visually-hidden {
+  position: absolute;
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0;
+  border: 0;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+}
+
 .container {
   width: 1180px;
   margin: 0 auto;
@@ -86,5 +96,117 @@ body {
   text-decoration: none;
   color: #2fb0ed;
   background-color: #ffffff;
+  border-radius: 50px;
+}
+
+.promo {
+  display: flex;
+  padding-top: 75px;
+}
+
+.promo-rating-column {
+  width: 605px;
+}
+
+.rating {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 231px;
+  height: 231px;
+  margin-left: 55px;
+  margin-top: 270px;
+  font-size: 14px;
+  line-height: 21px;
+  color: #2f80fd;
+  border-radius: 50%;
+  background-image: radial-gradient(68.31% 68.31% at 50% 50%, #f9fbff 0%, #cadef9 100%);
+  box-shadow: 0 10px 50px 0 rgba(119, 157, 255, 0.3);
+}
+
+.rating-text {
+  margin: 5px 0;
+  text-align: center;
+}
+
+.rating-number {
+  font-size: 34px;
+  line-height: 52px;
+  font-weight: 700;
+}
+
+.rating-link {
+  position: relative;
+  padding-right: 10px;
+  font-size: 10px;
+  line-height: 20px;
+  color: inherit;
+  text-decoration: none;
+}
+
+.rating-link::before {
+  position: absolute;
+  content: '';
+  top: 50%;
+  right: 0;
+  width: 3px;
+  height: 3px;
+  border: 1px solid #2f80fd;
+  transform: rotate(45deg) translateY(-50%);
+  border-left: none;
+  border-bottom: none;
+}
+
+.rating-link::after {
+  position: absolute;
+  content: '';
+  top: 50%;
+  right: 0;
+  width: 5px;
+  height: 1px;
+  background-color: #2f80fd;
+}
+
+.promo-text-column {
+  width: 575px;
+  color: #ffffff;
+}
+
+.promo-place-date {
+  margin: 0;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.promo-text-big {
+  margin: 18px 0 0;
+  font-size: 40px;
+  line-height: 50px;
+  font-weight: 700;
+}
+
+.promo-text-small {
+  margin: 21px 0 0;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.promo-register {
+  display: inline-block;
+  margin: 42px 0 0 15px;
+  padding: 15px 40px;
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #64e2cd;
+  box-shadow: 0 0 0 15px rgba(100, 226, 205, 0.5);
   border-radius: 50px;
 }

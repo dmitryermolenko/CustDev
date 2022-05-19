@@ -10,7 +10,7 @@ body {
                     url("../img/bg-2.png"),
                     url("../img/bg-3.png");
   background-repeat: no-repeat;
-  background-position: top right;
+  background-position: top right calc(50% - 19px), top left calc(50% + 27px), top right 50%;
 }
 
 .visually-hidden {
@@ -102,6 +102,7 @@ body {
 .promo {
   display: flex;
   padding-top: 75px;
+  padding-bottom: 185px;
 }
 
 .promo-rating-column {
@@ -209,4 +210,64 @@ body {
   background-color: #64e2cd;
   box-shadow: 0 0 0 15px rgba(100, 226, 205, 0.5);
   border-radius: 50px;
+}
+
+.section-title {
+  margin: 0;
+  font-size: 30px;
+  line-height: 37px;
+  color: #000000;
+}
+
+.audience {
+  position: relative;
+  padding-top: 75px;
+  padding-bottom: 169px;
+  background-image: url("../img/audience.png");
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+.audience-wrapper {
+  position: relative;
+}
+
+.audience-wrapper::after {
+  position: absolute;
+  content: "";
+  top: -100px;
+  right: -90px;
+  width: 231px;
+  height: 231px;
+  background-image: radial-gradient(68.31% 68.31% at 50% 50%, #ffffff 0%, #cadef9 100%),
+  linear-gradient(0deg, #ffffff, #ffffff);
+  border-radius: 50%;
+  box-shadow: 0 10px 50px 0 rgba(119, 157, 255, 0.3);
+  filter: blur(20px);
+
+}
+
+.audience-list {
+  display: flex;
+  margin: 97px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.audience-item {
+  width: 225px;
+  margin-right: 75px;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.audience-item-category {
+  width: 190px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #2f80ed;
+}
+
+.audience-item-description {
+  margin: 9px 0 0;
 }

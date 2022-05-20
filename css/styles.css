@@ -263,6 +263,7 @@ body {
 .audience-item-category {
   width: 190px;
   font-weight: 600;
+  letter-spacing: 0.05em;
   text-transform: uppercase;
   color: #2f80ed;
 }
@@ -321,6 +322,7 @@ body {
 
 .program-item-topic {
   font-weight: 600;
+  letter-spacing: 0.05em;
   text-transform: uppercase;
   color: #2f80ed;
 }
@@ -336,4 +338,67 @@ body {
   color: #2f80ed;
   border-bottom: 1px dashed #2f80ed;
   padding-bottom: 5px;
+}
+
+.result {
+  padding-top: 170px;
+  padding-bottom: 192px;
+  background-image: url("../img/bg-result.png"),
+                    url("../img/bg-result-2.png"),
+                    url("../img/bg-result-3.png");
+  background-repeat: no-repeat;
+  background-position: top 130px left calc(50% - 70px), top 70px left calc(50% - 40px), top left 50%;
+}
+
+.result-title {
+  color: #ffffff;
+}
+
+.result-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 42px 0 0;
+}
+
+.result-item {
+  box-sizing: border-box;
+  width: 565px;
+  margin: 0 50px 50px 0;
+  padding: 54px 52px 54px 148px;
+  background-repeat: no-repeat;
+  background-position: top 54px left 52px;
+  background-color: #ffffff;
+  box-shadow: 0 10px 30px 0 rgba(47, 55, 237, 0.1);
+  border-radius: 10px;
+}
+
+.result-item:nth-child(2n) {
+  margin-right: 0;
+}
+
+.result-item-practice {
+  background-image: url("../img/result-1.svg");
+}
+
+.result-item-process {
+  background-image: url("../img/result-2.svg");
+}
+
+.result-item-tools {
+  background-image: url("../img/result-3.svg");
+}
+
+.result-item-cases {
+  background-image: url("../img/result-4.svg");
+}
+
+.result-item-title {
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #2f80ed;
+}
+
+.result-item-description {
+  margin: 9px 0 0;
 }

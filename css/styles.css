@@ -312,7 +312,7 @@ body {
   flex-wrap: wrap;
   justify-content: space-between;
   width: 520px;
-  margin-top: 45px;
+  margin: 45px 0 0;
 }
 
 .program-item {
@@ -341,8 +341,7 @@ body {
 }
 
 .result {
-  padding-top: 170px;
-  padding-bottom: 192px;
+  padding: 170px 0;
   background-image: url("../img/bg-result.png"),
                     url("../img/bg-result-2.png"),
                     url("../img/bg-result-3.png");
@@ -400,5 +399,109 @@ body {
 }
 
 .result-item-description {
+  margin: 9px 0 0;
+}
+
+.speaker-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 70px;
+}
+
+.video-container {
+  position: relative;
+  width: 727px;
+}
+
+.video-container > video {
+  border-radius: 10px;
+}
+
+.video-play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 70px;
+  height: 70px;
+  background-color: rgba(47, 128, 237, 0.5);
+  border-radius: 50%;
+  border: none;
+  transform: translate(-50%, -50%);
+}
+
+.video-play::before {
+  position: absolute;
+  content: "";
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border: 15px solid transparent;
+  border-right: 0;
+  border-left: 18px solid #ffffff;
+  transform: translate(-25%, -50%);
+}
+
+.speaker-info {
+  box-sizing: border-box;
+  width: 351px;
+  padding: 66px 31px 66px 63px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 30px 100px 0 rgba(47, 55, 237, 0.1);
+}
+
+.speaker-name {
+  margin: 0;
+  font-size: 24px;
+  line-height: 44px;
+  font-weight: 700;
+  color: #2f80ed;
+}
+
+.speaker-position {
+  margin: 15px 0 0;
+  line-height: 29px;
+}
+
+.speaker-skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 82px 0 0;
+}
+
+.speaker-skills-item {
+  width: 250px;
+  padding-top: 94px;
+  background-repeat: no-repeat;
+}
+
+.product-experience-skill {
+  background-image: url("../img/skill-1.svg");
+}
+
+.mentoring-skill {
+  background-image: url("../img/skill-2.svg");
+}
+
+.developing-experience-skill {
+  background-image: url("../img/skill-3.svg");
+}
+
+.top-rating-skill {
+  background-image: url("../img/skill-4.svg");
+}
+
+.speaker-skill {
+  width: 200px;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #2f80ed;
+}
+
+.speaker-skill-description {
   margin: 9px 0 0;
 }

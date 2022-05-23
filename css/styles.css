@@ -33,6 +33,19 @@ body {
   width: 1435px;
 }
 
+.button {
+  display: inline-block;
+  padding: 15px 40px;
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #64e2cd;
+  border-radius: 50px;
+}
+
 .main-header-nav {
   display: flex;
   align-items: baseline;
@@ -201,19 +214,9 @@ body {
   line-height: 22px;
 }
 
-.promo-register {
-  display: inline-block;
+.promo-register-btn {
   margin: 42px 0 0 15px;
-  padding: 15px 40px;
-  font-size: 14px;
-  line-height: 17px;
-  font-weight: 700;
-  text-transform: uppercase;
-  text-decoration: none;
-  color: #ffffff;
-  background-color: #64e2cd;
   box-shadow: 0 0 0 15px rgba(100, 226, 205, 0.5);
-  border-radius: 50px;
 }
 
 .section-title {
@@ -535,4 +538,109 @@ body {
 .gallery-item-img {
   width: 100%;
   height: auto;
+}
+
+.tariff {
+  padding: 199px 0 0;
+  background-image: url("../img/tariff-bg.png");
+  background-repeat: no-repeat;
+  background-position: top 260px center;
+}
+
+.tariff-wrapper {
+  position: relative;
+  padding-bottom: 251px;
+}
+
+.tariff-wrapper::before {
+  position: absolute;
+  content: '';
+  left: -150px;
+  bottom: 20px;
+  width: 141px;
+  height: 141px;
+  background-image: radial-gradient(68.31% 68.31% at 50% 50%, #6aaaff 0%, #2f80ed 100%);
+  box-shadow: 0 10px 50px rgba(119, 157, 255, 0.3);
+  border-radius: 50%;
+  filter: blur(20px);
+}
+
+.tariff-wrapper::after {
+  position: absolute;
+  content: "";
+  top: -160px;
+  right: -150px;
+  width: 231px;
+  height: 231px;
+  background-image: radial-gradient(68.31% 68.31% at 50% 50%, #ffffff 0%, #cadef9 100%),
+  linear-gradient(0deg, #ffffff, #ffffff);
+  border-radius: 50%;
+  box-shadow: 0 10px 50px 0 rgba(119, 157, 255, 0.3);
+  filter: blur(20px);
+}
+
+.tariff-title {
+  text-align: center;
+}
+
+.tariff-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 65px -25px 0 0;
+  padding: 0;
+}
+
+.tariff-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  width: 271px;
+  margin-right: 25px;
+  padding: 70px 38px 64px;
+  list-style: none;
+  color: #2f80ed;
+  background-color: #ffffff;
+  box-shadow: 0 20px 50px 0 rgba(47, 55, 237, 0.12);
+  border-radius: 10px;
+}
+
+.good-price {
+  position: relative;
+}
+
+.good-price::before {
+  position: absolute;
+  content: 'Выгодно';
+  top: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90px;
+  height: 90px;
+  font-size: 12px;
+  line-height: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #2f80ed;
+  border-radius: 50%;
+  transform: translate(20px, -50%);
+}
+
+.tariff-price {
+  font-size: 25px;
+  line-height: 38px;
+  font-weight: 700;
+}
+
+.tariff-description {
+  margin-top: 12px;
+  font-weight: 600;
+  line-height: 25px;
+}
+
+.tariff-buy-btn {
+  margin-top: 33px;
 }

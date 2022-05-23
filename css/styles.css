@@ -29,6 +29,10 @@ body {
   padding: 0 10px;
 }
 
+.container-wide {
+  width: 1435px;
+}
+
 .main-header-nav {
   display: flex;
   align-items: baseline;
@@ -504,4 +508,31 @@ body {
 
 .speaker-skill-description {
   margin: 9px 0 0;
+}
+
+.gallery {
+  padding-top: 130px;
+}
+
+.gallery-title {
+  text-align: center;
+}
+
+.gallery-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 74px -25px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.gallery-item {
+  width: 340px;
+  margin-right: 25px;
+  margin-bottom: 25px;
+}
+
+.gallery-item-img {
+  width: 100%;
+  height: auto;
 }

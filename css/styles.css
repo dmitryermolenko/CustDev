@@ -63,13 +63,13 @@ body {
 
 .city-item {
   margin-right: 25px;
-  text-transform: uppercase;
 }
 
 .city-link {
   font-size: 14px;
   line-height: 17px;
   text-decoration: none;
+  text-transform: uppercase;
   color: #cccccc;
 }
 
@@ -105,13 +105,13 @@ body {
 
 .register {
   margin-left: auto;
-  padding: 10px 27px;
+  padding: 13px 27px;
   font-size: 14px;
   line-height: 17px;
   font-weight: 400;
   text-align: center;
   text-decoration: none;
-  color: #2fb0ed;
+  color: #2f80ed;
   background-color: #ffffff;
   border-radius: 50px;
 }
@@ -643,4 +643,53 @@ body {
 
 .tariff-buy-btn {
   margin-top: 33px;
+}
+
+.main-footer {
+  padding-top: 41px;
+  padding-bottom: 40px;
+  font-size: 14px;
+  line-height: 17px;
+  background-color: #2f80ed;
+}
+
+.main-footer-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding-bottom: 45px;
+}
+
+.main-footer-bottom {
+  padding: 31px 0;
+  opacity: 0.7;
+  color: #ffffff;
+  background-color: #185fbf;
+}
+
+.main-footer-bottom-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.copyright {
+  margin: 0;
+}
+
+.main-footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  width: 460px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.main-footer-links-item {
+  margin-left: 49px;
+}
+
+.main-footer-link {
+  color: #ffffff;
+  text-decoration: none;
 }
